@@ -9,16 +9,18 @@ body {
 .a, .c {
   flex-grow: 1;
   background-color: lightblue;
+  height: 10%;
 }
 
 .b {
   background-color: lightblue;
-  flex-grow: 2;
+  flex-grow: 3;
 }
 
 .container {
+  max-width: 100%;
   display: flex;
-  min-height: 900px;
+  min-height: 100vh;
   flex-direction: column;
   padding: 2px;
   background-color: lightpink;
@@ -30,10 +32,6 @@ body {
     flex-wrap: wrap;
     min-height: 100vh;
   }
-}
-
-.a {
-  width: 100%;
 }
 
 .a, .b, .c {
