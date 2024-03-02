@@ -15,7 +15,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: .5rem;
- text-align: center;
+  text-align: center;
   flex-grow: 2;
 
 }
@@ -57,22 +57,33 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 650px) {
   .main-container {
     flex-direction: column;
   }
 
   .container-one {
-    flex-direction: column;
-  
+    flex-basis: 100%;
+    flex-grow: 1;
   }
 
   .container-two {
-    flex-direction: column;
-    height: 15vh;
+    flex-grow: 0;
   }
 
   .triplet {
-    height: 13vh;
+    height: 15vh;
+  }
+
+  .a {
+    height: 15vh;
+  }
+
+  .b {
+    height: 50vh;
+  }
+
+  .f {
+    height: 14vh;
   }
 }
