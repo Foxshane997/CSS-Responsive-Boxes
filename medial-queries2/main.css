@@ -15,7 +15,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: .5rem;
-
+ text-align: center;
   flex-grow: 2;
 
 }
@@ -23,10 +23,11 @@ body {
 .container-two{
   flex-grow: 1;
   padding-right: 5px;
+  text-align: center;
 }
 
 .child{
-  background-color: rgb(107, 90, 90);
+  background-color: lightslategray;
   border: solid black 3px;
 }
 
@@ -53,4 +54,25 @@ body {
 .a{
   height: 40vh;
   margin-bottom: .5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .container-one {
+    flex-direction: column;
+  
+  }
+
+  .container-two {
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  .triplet {
+    height: 13vh;
+  }
 }
