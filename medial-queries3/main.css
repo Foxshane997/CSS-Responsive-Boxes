@@ -44,7 +44,7 @@ aside > div {
 
 .wrap {
   display: flex;
-  flex-direction: row; /*snaps it into place*/
+  flex-direction: column; /*snaps it into place*/
   min-height: 85vh;
   width: 100%; /*width scretching across for b-g */
 }
@@ -54,15 +54,14 @@ main {
   color: white;
   border: 1px solid black;
   flex-grow: 4;
-  /* font-size: larger; */
+  font-size: larger; 
 }
 
 @media (min-width: 650px) {
-  .wrapper {
-    /* display: flex; */
+  .wrap {
+    display: flex; 
     flex-direction: row;
-    /* width: 100%; */
-
+    width: 100%; 
   }
 
   aside {
@@ -81,8 +80,8 @@ main {
 
   main {
     /* flex-direction: row; */
-    flex: 1;
+    flex: 2;
     flex-grow: 1;
-    height: 83%;
+    height: 630px;
   }
 }
